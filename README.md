@@ -36,13 +36,21 @@ Make sure you have installed:
 ```sql
 CREATE DATABASE RPSSL;
 ```
-2. **Run the init script (from project root)**:
+3. **Run the init script (from project root)**:
 
 ```bash
 psql -U postgres -d RPSSL -f ./db/init/init.sql
 ```
 
 >If your username/password is different, update accordingly.
+> 
+4. **Run the API application**
+
+In the project folder, run:
+
+```bash
+dotnet run
+```
 
 ---
 
