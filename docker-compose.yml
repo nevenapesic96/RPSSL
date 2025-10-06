@@ -1,0 +1,36 @@
+﻿version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: rpssl-postgres
+    environment:
+      POSTGRES_DB: RPSSL
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - rpssl-network
+
+  api:
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
+    container_name: rpssl-api
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=RPSSL;Username=postgres;Password=postgres
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    networks:
+      - rpssl-network
+
+volumes:
+  pgdata:
+
+networks:
+  rpssl-network:

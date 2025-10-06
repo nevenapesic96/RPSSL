@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7A195D07-4B60-45AA-99BB-DB977477879D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5466CCE7-165F-4EB4-8213-1D8376CEDDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6FB517E8-7F61-4A7B-B72F-3F58772787B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{2F7AA184-A246-445F-ACB1-FEB1C8A723A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{E0EF83AD-D3E1-4708-A2B1-6CDB04617026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{6163392C-417B-4F73-BC95-36EAA043C3B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSSL.Tests", "RPSSL.Tests\RPSSL.Tests.csproj", "{98AA25FC-89BB-4138-ADEF-4F4D6C338647}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FBFCC6FF-72B5-4A8E-8DF8-DCC8A4B4BFE0}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FB517E8-7F61-4A7B-B72F-3F58772787B3} = {7A195D07-4B60-45AA-99BB-DB977477879D}
+		{2F7AA184-A246-445F-ACB1-FEB1C8A723A3} = {7A195D07-4B60-45AA-99BB-DB977477879D}
+		{E0EF83AD-D3E1-4708-A2B1-6CDB04617026} = {7A195D07-4B60-45AA-99BB-DB977477879D}
+		{6163392C-417B-4F73-BC95-36EAA043C3B3} = {7A195D07-4B60-45AA-99BB-DB977477879D}
+		{98AA25FC-89BB-4138-ADEF-4F4D6C338647} = {5466CCE7-165F-4EB4-8213-1D8376CEDDC8}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FB517E8-7F61-4A7B-B72F-3F58772787B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB517E8-7F61-4A7B-B72F-3F58772787B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB517E8-7F61-4A7B-B72F-3F58772787B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB517E8-7F61-4A7B-B72F-3F58772787B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7AA184-A246-445F-ACB1-FEB1C8A723A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7AA184-A246-445F-ACB1-FEB1C8A723A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7AA184-A246-445F-ACB1-FEB1C8A723A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7AA184-A246-445F-ACB1-FEB1C8A723A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0EF83AD-D3E1-4708-A2B1-6CDB04617026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0EF83AD-D3E1-4708-A2B1-6CDB04617026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0EF83AD-D3E1-4708-A2B1-6CDB04617026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0EF83AD-D3E1-4708-A2B1-6CDB04617026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6163392C-417B-4F73-BC95-36EAA043C3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6163392C-417B-4F73-BC95-36EAA043C3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6163392C-417B-4F73-BC95-36EAA043C3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6163392C-417B-4F73-BC95-36EAA043C3B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98AA25FC-89BB-4138-ADEF-4F4D6C338647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98AA25FC-89BB-4138-ADEF-4F4D6C338647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98AA25FC-89BB-4138-ADEF-4F4D6C338647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98AA25FC-89BB-4138-ADEF-4F4D6C338647}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

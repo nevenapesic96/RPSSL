@@ -1,0 +1,69 @@
+# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+.vscode/**
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# ASP.NET Core secrets
+secrets.json
+*.secret.json
+
+# dotnet tools
+/.tools/
+
+# Logs
+*.log
+logs/
+
+# Docker
+Dockerfile
+docker-compose.override.yml
+.env
+*.db
+
+# OS junk files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.DS_Store
+*.AppleDouble
+.LSOverride
+Icon?
+
+# npm/Yarn (if using frontend inside)
+node_modules/
+dist/
+
+# Entity Framework Migrations cache (optional)
+Migrations/
+
+# Test coverage
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+*.trx
+
+# Publish directory
+publish/
+*.publish/
+
+# Others
+*.ncrunch*
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+*.vs/
