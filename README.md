@@ -42,7 +42,9 @@ docker-compose up --build
 
 This will build the .NET 8 API container and start both the API and a PostgreSQL container.
 
+---
 ### API Endpoints
+
 
 | Method | Endpoint     | Description                                          |
 |--------|--------------|------------------------------------------------------|
@@ -52,6 +54,9 @@ This will build the .NET 8 API container and start both the API and a PostgreSQL
 | DELETE | `/play`      | Resets scoreboard for selected user, or entire table |
 | GET    | `/results`   | Returns latest results                               |
 
+
+---
+
 ### Database connection settings
 
 ```env
@@ -59,7 +64,30 @@ POSTGRES_DB: RPSSL
 POSTGRES_USER: postgres
 POSTGRES_PASSWORD: postgres
 ```
+
+---
+
+### Running locally without Docker
+
+#### Steps:
+
+1. **Start PostgreSQL locally**
+
+2. **Create the database manually**:
+
+```sql
+CREATE DATABASE RPSSL;
+```
+2. **Run the init script (from project root)**:
+
+```bash
+psql -U postgres -d RPSSL -f ./db/init/init.sql
+```
+
+>If your username/password is different, update accordingly.
 ### Running Tests
+
+---
 
 ```bash
 dotnet test

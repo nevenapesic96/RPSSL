@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS play_results (
+    result_id SERIAL PRIMARY KEY,
+    playtime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    result VARCHAR(50) NOT NULL,
+    username VARCHAR(100) NOT NULL
+    );
