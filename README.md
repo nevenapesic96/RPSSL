@@ -25,49 +25,7 @@ Make sure you have installed:
 
 ---
 
-### Running the app with Docker Compose
-
-1. **Clone the repository**
-
-```bash
-git clone git@github.com:your-username/your-repo-name.git
-cd your-repo-name
-```
-
-2. **Run the app**
-
-```bash
-docker-compose up --build
-```
-
-This will build the .NET 8 API container and start both the API and a PostgreSQL container.
-
----
-### API Endpoints
-
-
-| Method | Endpoint     | Description                                          |
-|--------|--------------|------------------------------------------------------|
-| GET    | `/choices`   | Returns the list of all possible game choices        |
-| GET    | `/random`    | Returns a random choice                              |
-| POST   | `/play`      | Starts a game round                                  |
-| DELETE | `/play`      | Resets scoreboard for selected user, or entire table |
-| GET    | `/results`   | Returns latest results                               |
-
-
----
-
-### Database connection settings
-
-```env
-POSTGRES_DB: RPSSL
-POSTGRES_USER: postgres
-POSTGRES_PASSWORD: postgres
-```
-
----
-
-### Running locally without Docker
+## Running locally without Docker
 
 #### Steps:
 
@@ -85,9 +43,52 @@ psql -U postgres -d RPSSL -f ./db/init/init.sql
 ```
 
 >If your username/password is different, update accordingly.
-### Running Tests
 
 ---
+
+## Running the app with Docker Compose
+
+1. **Clone the repository**
+
+```bash
+git clone git@github.com:your-username/your-repo-name.git
+cd your-repo-name
+```
+
+2. **Run the app**
+
+```bash
+docker-compose up --build
+```
+
+This will build the .NET 8 API container and start both the API and a PostgreSQL container.
+
+---
+## API Endpoints
+
+
+| Method | Endpoint     | Description                                          |
+|--------|--------------|------------------------------------------------------|
+| GET    | `/choices`   | Returns the list of all possible game choices        |
+| GET    | `/random`    | Returns a random choice                              |
+| POST   | `/play`      | Starts a game round                                  |
+| DELETE | `/play`      | Resets scoreboard for selected user, or entire table |
+| GET    | `/results`   | Returns latest results                               |
+
+
+---
+
+## Database connection settings
+
+```env
+POSTGRES_DB: RPSSL
+POSTGRES_USER: postgres
+POSTGRES_PASSWORD: postgres
+```
+
+---
+
+## Running Tests
 
 ```bash
 dotnet test
